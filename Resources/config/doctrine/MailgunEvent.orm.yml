@@ -2,6 +2,11 @@ Azine\MailgunWebhooksBundle\Entity\MailgunEvent:
     type: entity
     table: mailgun_event
     repositoryClass: Azine\MailgunWebhooksBundle\Entity\Repositories\MailgunEventRepository
+    indexes:
+        tag_idx:
+            columns: [ tag ]
+        message_id_idx:
+            columns: [ message_id ]
     fields:
         id:
             type: integer
